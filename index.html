@@ -12,30 +12,49 @@
 </head>
 
 <body>
+    <style> 
+    body {
+    background-image: url("https://www.thoughtco.com/thmb/TqQm3tRT4882EvcdDbqaogKDonI=/3609x2727/filters:fill(auto,1)/close-up-of-crystal-stone-glowing-in-darkroom-583919173-56f28e5d3df78ce5f83d7284.jpg");
+    background-size: 34%;
+
+    }
+    
+    </style>   
+
+
+   
+   
     <script>
         //numbers computer can choose from
-        var ar = [112, 32, 56, 234, 67, 23, 231, 123, 12];
+        var ar = [112, 32, 56, 234, 67, 23, 231, 123, 90];
         //computer will chose random number from ar 
             //This tells computer chose random word from above
             var number = ar[Math.floor(Math.random() * ar.length)];
         console.log (number)
         var lost = 0;
         var won= 0;
+        $(".wins").append(won);
+        $(".loss").append(lost);
 
         //Making a for loop that will loop 4 times ad will append it to the crystal div
      for (var i = 0; i < 4; i++) {
             var crystal = ("<div>");
             $(".crystals").append(crystal);
-            console.log(crystal)
+            console.log(crystal);
 
 
         }
     </script>
 
     <!--Making a div class for the crystals-->
+    
     <div class="crystals"></div>
+    <p class="loss"></p>
+    <p class="wins"></p>
+    
+    
 
-    </script>
+
 
 </body>
 
