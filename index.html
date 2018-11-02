@@ -6,56 +6,52 @@
 
     <title>Get the number get the prize</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/style/style.css">
     <script src="https://code.jquery.com/jquery.js"></script>
+
 </head>
 
 <body>
-    <style> 
-    body {
-    background-image: url("https://www.thoughtco.com/thmb/TqQm3tRT4882EvcdDbqaogKDonI=/3609x2727/filters:fill(auto,1)/close-up-of-crystal-stone-glowing-in-darkroom-583919173-56f28e5d3df78ce5f83d7284.jpg");
-    background-size: 34%;
-
-    }
-    
-    </style>   
-
-
-   
-   
-    <script>
-        //numbers computer can choose from
-        var ar = [112, 32, 56, 234, 67, 23, 231, 123, 90];
-        //computer will chose random number from ar 
-            //This tells computer chose random word from above
-            var number = ar[Math.floor(Math.random() * ar.length)];
-        console.log (number)
-        var lost = 0;
-        var won= 0;
-        $(".wins").append(won);
-        $(".loss").append(lost);
-
-        //Making a for loop that will loop 4 times ad will append it to the crystal div
-     for (var i = 0; i < 4; i++) {
-            var crystal = ("<div>");
-            $(".crystals").append(crystal);
-            console.log(crystal);
-
-
-        }
-    </script>
 
     <!--Making a div class for the crystals-->
     
-    <div class="crystals"></div>
+    <section class="randomnum"> 
+    Can you get to this number? 
+        
+    <!-- i will append the random number to this section-->
+    <p class="number"></p>
+    
+    <p class="yournum"></p>
     <p class="loss"></p>
     <p class="wins"></p>
+    <div id="inner"></div>
+
+
+
+
+    </section>
     
+    <section>
+        
+    <button class="c1"><img src="https://images.girlslife.com/posts/033/33512/p3130337_1024x1024.jpg" height=" 250" width="250"> </button>
+       
+         <button class="c2" > <img src="https://images-na.ssl-images-amazon.com/images/I/51snWRfynML._US500_.jpg" height=" 250" width="250"> "></button>
+        
+      
+          <button class="c3">  <img src="https://images-na.ssl-images-amazon.com/images/I/81gB58rGmcL._SX425_.jpg" height=" 250" width="250"></button>
+       
+           <button class="c4"> <img src="https://geology.com/gemstones/ruby-and-sapphire/sapphire-crystal.jpg" height=" 250" width="250"> </button> 
+      
+
+
+
+    </section>
     
 
 
 
+
+    <script type="text/javascript" src="assets/js/game.js"></script>
 </body>
 
 </html>

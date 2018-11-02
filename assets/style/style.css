@@ -1,0 +1,22 @@
+body {
+    background-image: url("https://www.thoughtco.com/thmb/TqQm3tRT4882EvcdDbqaogKDonI=/3609x2727/filters:fill(auto,1)/close-up-of-crystal-stone-glowing-in-darkroom-583919173-56f28e5d3df78ce5f83d7284.jpg");
+    background-size: 34%
+    /* background-color: red; */
+}
+
+.randomnum {
+  height: 4in;
+width: 4in; 
+border: solid blue 7px; 
+  
+    background-color: blue;
+}
+.number {
+background: black;
+color: white;
+
+}
+button {
+    border: solid 10px rgb(72, 0, 255);
+}
+
