@@ -49,6 +49,8 @@ $(".c4").on("click", function () {
 
 });
 
+//tried assisgning numbers to each crystal  and appending it to the yournum div so they add up from previous number when you click it
+
 
 
 
