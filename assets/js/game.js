@@ -15,7 +15,7 @@ var m = 55;
 $(".wins").text(won);
 $(".loss").text(lost);
 $(".number").append(number);
-$("#inner").append("<p>Test</p>");
+
 //if the guessed number and the numbers added up by the crystals equal each other then an alert will pop up saying you won and refresh the page 
 if (yournumber === number) {
     alert("you won get ready for round 2")
@@ -23,7 +23,7 @@ if (yournumber === number) {
 };
 $(".c1").on("click", function () {
     d++;
-    $(".yournum").html(d);
+    $(".yournum").append(d);
 
 
 });
